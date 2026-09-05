@@ -17,7 +17,7 @@ while(True):
         pyautogui.rightClick()
     except:    
         try:
-            pyautogui.locateOnScreen("images/fishingPoleCasted.png", confidence=0.65, grayscale=True)
+            pyautogui.locateOnScreen(("images/fishingPoleCasted.png" or "images/fishingMessage.png"), confidence=0.7, grayscale=True)
         except:
             pyautogui.press('esc')
             print(f"Fish Caught: {fishCaught}")
